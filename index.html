@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+
+  <br><br>
+  <div class="container border">
+    <!---header--->
+    <nav class="navbar bg-body-tertiary border">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">
+          <h3>Payment Form Example</h3>
+        </span>
+      </div>
+    </nav>
+    <!---header--->
+    <div class="row mb-3 mx-3 my-3">
+      <!---card data--->
+      <div class="col">
+        <div class="alert alert-danger" role="alert">
+          Some fields are missing
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-3 mx-3 my-3">
+      <!---card data--->
+      <div class="col-7">
+        <label id="card" class="mb-2">Card #</label>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXXXXXX" aria-label="card"
+            aria-describedby="card">
+        </div>
+      </div>
+
+      <div class="col-2">
+        <label id="cvc" class="mb-2">CVC #</label>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="0000" aria-label="cvc" aria-describedby="cvc">
+        </div>
+      </div>
+
+      <div class="col">
+        <label id="amount" class="mb-2">Amount</label>
+        <div class="input-group">
+          <span class="input-group-text">$</span>
+          <input type="text" class="form-control" placeholder="Amount" aria-label="amount" aria-describedby="amount">
+        </div>
+      </div>
+      <!---card data--->
+    </div>
+
+    <!---name--->
+    <div class="row mb-3 mx-3 my-3">
+      <div class="col">
+        <label id="first-name" class="mb-2">First Name</label>
+        <div class="input-group">
+          <input type="text" class="form-control" aria-label="first-name" aria-describedby="first-name">
+        </div>
+      </div>
+
+      <div class="col">
+        <label id="last-name" class="mb-2">Last Name</label>
+        <div class="input-group">
+          <input type="text" class="form-control" aria-label="last-name" aria-describedby="last-name">
+        </div>
+      </div>
+    </div>
+    <!---name--->
+
+    <!---address--->
+    <div class="row mb-3 mx-3 my-3">
+      <div class="col-6">
+        <label id="city" class="mb-2">City</label>
+        <div class="input-group">
+          <input type="text" class="form-control" aria-label="city" aria-describedby="city">
+        </div>
+      </div>
+
+      <div class="col">
+        <label id="state" class="mb-2">State</label>
+        <div class="input-group">
+          <select class="form-select" aria-label="pick-a-state">
+            <option selected>Pick a state</option>
+            <option value="1">Granada</option>
+            <option value="2">Almeria</option>
+            <option value="3">Málaga</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col">
+        <label id="city" class="mb-2">City</label>
+        <div class="input-group">
+          <input type="text" class="form-control" aria-label="city" aria-describedby="city">
+        </div>
+      </div>
+    </div>
+    <!---address--->
+
+    <!---payment metod--->
+    <div class="row mb-3 mx-3 my-3 ">
+
+      <div class="col">
+        <label for="buttons" class="mb-2">Payment Method:</label>
+        <br>
+        <div class="btn-group btn-group-toggle bg-secondary" id="buttons" data-toggle="buttons">
+          <label class="btn">
+            <input type="radio" name="payment_method" value="credit_card_1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-credit-card"
+              viewBox="0 0 20 20">
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+              <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+            </svg>
+          </label>
+          <label class="btn">
+            <input type="radio" name="payment_method" value="credit_card_2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-credit-card"
+              viewBox="0 0 20 20">
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+              <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+            </svg>
+          </label>
+          <label class="btn">
+            <input type="radio" name="payment_method" value="credit_card_3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-credit-card"
+              viewBox="0 0 20 20">
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+              <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+            </svg>
+          </label>
+          <label class="btn">
+            <input type="radio" name="payment_method" value="credit_card_4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-credit-card"
+              viewBox="0 0 20 20">
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+              <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+            </svg>
+          </label>
+        </div>
+      </div>
+
+      <div class="col mb-5">
+        <label for="floatingTextarea" class="mb-2">Message</label>
+        <div class="form-floating">
+          <textarea class="form-control" id="floatingTextarea" style="height: 150px"></textarea>
+        </div>
+        <label for="floatingTextarea">Add any notes here</label>
+      </div>
+    </div>
+    <!---buttons--->
+    <nav class="navbar bg-body-tertiary border">
+      <form class="container-fluid justify-content-start mx-2">
+        <button type="button" class="btn btn-secondary ms-auto me-1">Cancel</button>
+        <button type="button" class="btn btn-primary">Send</button>
+      </form>
+    </nav>
+    <!---buttons--->
+  </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
